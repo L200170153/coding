@@ -1,0 +1,291 @@
+
+body {
+	background: #eee;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+ 	
+.wrap { /* ini ngatur semua, dan buat margin 0*/
+	width: 100%;
+	margin:0 auto;
+
+}
+
+/* ini ngatur menu*/
+
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	width: 100%;
+	margin:0 0 0;
+	background: #222;
+	position:fixed;
+}
+
+nav.menu ul li {
+	margin:0;
+	float:left;
+}
+ 
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+ 
+nav.menu ul a:hover {
+	color:#12ab9c;
+	transition: all 0.1s ease;
+}
+ 
+/* ini ngatur konten */
+
+.blog p, h1 {
+	margin:0;
+	padding:0;
+}
+.blog p {
+	margin-top: 10px;
+}
+.tombol {
+	margin-top:20px;
+}
+.tombol a button  {
+	color:#fff;
+}
+.tombol button {
+	background:#33f;
+	border:none;
+	width:200px;
+	height:50px;
+	font-size:14px;
+}
+.tombol button:hover {
+	cursor: pointer;
+	font-weight: 800;
+}
+
+.ilmuislam1 {
+	background: url('../img/fiqih.png');
+	width:100%;
+	float:left;
+	margin-top:70px;
+}
+.fiqih {
+	margin-top:40px;
+	margin-bottom:25px;
+	text-align: justify;
+	float:left;
+	width:30%;
+	height:auto;
+	margin-left:50%;
+}
+
+.ilmuislam2 {
+	background: url('../img/akhlaq.png');
+	width:100%;
+	float:left;
+}
+.akidah {
+	margin-top:40px;
+	margin-bottom:25px;
+	text-align: justify;
+	float:left;
+	width:30%;
+	height:auto;
+	margin-left:10%;
+}
+.ilmuislam3 {
+	background: url('../img/akidah.png');
+	width:100%;
+	float:left;
+}
+.akhlaq {
+	margin-top:40px;
+	margin-bottom:40px;
+	text-align: justify;
+	float:left;
+	width:30%;
+	height:auto;
+	margin-left:50%;
+}
+.ilmuislam4 {
+	background: url('../img/ibadah.png');
+	width:100%;
+	float:left;
+}
+.ibadah {
+	margin-top:40px;
+	margin-bottom:40px;
+	text-align: justify;
+	float:left;
+	width:30%;
+	height:auto;
+	margin-left:10%;
+}
+.ilmuislam5 {
+	background: url('../img/tauhid.png');
+	width:100%;
+	float:left;
+}
+.tajwid {
+	margin-top:40px;
+	margin-bottom:40px;
+	text-align: justify;
+	float:left;
+	width:30%;
+	height:auto;
+	margin-left:50%;
+}
+.ilmuislam6 {
+	background: url('../img/tajwid.png');
+	width:100%;
+	float:left;
+}
+.tauhid {
+	margin-top:40px;
+	margin-bottom:40px;
+	text-align: justify;
+	float:left;
+	width:30%;
+	height:auto;
+	margin-left:10%;
+}
+
+/* ini ngatur footer */
+
+footer {
+	float: left;
+	height:55px;
+	width:100%;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 960px) {
+	.wrap {
+		width: 100%;
+		margin:0 auto;
+	}
+	.fiqih, .akidah, .akhlaq, .ibadah, .tajwid, .tauhid{
+		width:90%;
+	  margin-bottom: 20px;
+		margin-left:5%;
+	}
+	.ilmuislam1 {
+		margin-top:0px;
+	}
+	.ilmuislam1,.ilmuislam2,.ilmuislam3,.ilmuislam4,.ilmuislam5,.ilmuislam6 {
+		background: #fff;
+		border-bottom: 1px solid #12ab9c;
+	}
+	nav.menu ul {
+		width: 100%;
+		position:relative;
+	}
+ 
+	nav.menu ul {
+		float:none;
+	}
+ 
+	nav.menu ul li {
+		float:none;
+	}
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+	.blog {
+		width:100%;
+	}
+	.blog h1{
+		font-size:18pt;
+	}
+	.conteudo {
+		float:none;
+		margin:0 auto;
+		width:100%;
+		background: #fff;
+	}
+	.conteudo img {
+		max-width: 100%;
+		min-width: 100%;
+	}
+	.tombol button {
+		background:blue;
+		border:none;
+		width:100%;
+		height:40px;
+		font-size:14px;
+	}
+	.tombol button:hover {
+		font-weight:normal;
+	}
+}
+ 
+@media screen and (max-width: 460px) {
+ 
+	nav.menu ul {
+		width: 100%;
+		position:relative;
+	}
+ 
+	nav.menu ul {
+		float:none;
+	}
+ 
+	nav.menu ul li {
+		float:none;
+	}
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+	.conteudo img {
+		max-width: 100%;
+		min-width: 100%;
+	}			
+	img {
+		display:none;
+	}
+	.tombol button {
+		background:#77f;
+		border:none;
+		width:100%;
+		height:30px;
+		font-size:14px;
+	}
+	.tombol button:hover {
+		font-weight:normal;
+	}
+	.blog h1 {
+		font-size:16pt;
+	}
+	.conteudo p {
+		padding:20;
+		margin:20;
+		font-size:12pt;
+	}
+	.fiqih, .akidah, .akhlaq, .ibadah, .tajwid, .tauhid{
+		margin:5%;
+		width:90%;
+		margin-bottom: 20px;
+	}
+	.ilmuislam1, .ilmuislam2, .ilmuislam3, .ilmuislam4, .ilmuislam5, .ilmuislam6 {
+		background:#fff;
+		border-bottom:1px solid #12ab9c;
+		margin-top:0px;
+	}
+}

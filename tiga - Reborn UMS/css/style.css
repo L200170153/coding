@@ -1,0 +1,348 @@
+
+body {
+	margin:0; /* ngatur biar margin semuanyaa 0 */
+	font-family: 'Open Sans', sans-serif; /* ngatur font */
+	overflow:hidden; /* ngilangin scroll bar */
+	height:auto; /* tingginya menyesuaikan */
+	background:#222;
+}
+/* ngatur layout dasar */	
+
+.wrap { /* ini ngatur semua, dan buat margin 0*/
+	width: 100%; /* lebarnya sesuai layar */
+	margin:0 auto; /* margin 0, tapi tengah gara" auto*/
+	height:auto; /* height nya menyesuaikan */
+}
+.atas {
+	width:100%; /* lebarnya 100% dari lebaar wrap */
+	height:auto; /* height nya menyesuaikan */
+}
+.bawah {
+	width:100%; /* lebarnya 100% dari lebaar wrap */
+	height:610px;
+}
+.kiri {
+	width:5%; /* lebarnya 5% dari lebaar bawah */
+	height:auto;
+	float:left; /* biar disamping kiri */
+}
+.kanan {
+	float:right; /* biar disamping kanan */
+	width:95%; /* lebarnya 95% dari lebaar bawah */
+	height:auto;
+}
+
+/* ini ngatur menu*/
+
+nav {
+	float:left;
+	width:100%; /* lebarnya 100% dari lebaar atas */
+}
+nav.menu ul {
+	overflow:hidden;
+	color:#222;
+	list-style: none; /* ngilain list style nya */
+	float:left;
+	padding:0; 
+	width: 100%;
+	margin:0 0 0 0;
+	background:none;
+}
+
+nav.menu ul li {
+	margin:0;
+	float:left; /* ngrubah list yang awalnya vertikal jadi horizontal */
+}
+ 
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#333;
+	text-transform: uppercase; /*jadi huruf kapital */
+	transition: all 0.5s ease;
+	text-decoration: none; /* hilangin underline */
+}
+ 
+nav.menu ul a:hover { /* ini ngatur bagian itu jika ada kursor diatasnya */
+	color:#fff;
+	transition: all 0.1s ease; /* ini transisi nya  */
+}
+ 
+/* ini ngatur konten */
+
+.blog {
+	float:left;
+	width:100%;
+	background:url('../img/back.png');
+}
+.blog p, h1 {
+	margin:0;
+	padding:0;
+	color: #fff;	
+}
+.blog p {
+	margin-top: 10px;
+}
+.info {
+	float:left;
+	margin:20% 0 0 3%;
+	width:35%;
+	height:auto;
+	text-align:justify;
+	font-size: 13pt;
+}
+.blog .iniabout .info p {
+  margin:2%;
+}
+.blog .iniabout .info h1 {
+	margin:2%;
+}
+.gm {
+	width:100%;
+	height:50px;
+	margin-top:255px;
+}
+.gmm {
+	background:url('../img/gmm.png');
+	width:100%;
+	height:50px;
+	background-repeat:no-repeat; /* biar saat ukuran gambar lebih kecil dari ukuran class yang memmuatnya, gambar tersebut tidak diulang-ulang */
+	margin-left:10px;
+}
+.gmm:hover {
+	background:url('../img/gmm1.png');
+	background-repeat:no-repeat;
+}
+.fb {
+	width:100%;
+	height:50px;
+	margin-top:20px;
+	
+}
+.fbb {
+	background:url('../img/fbb.png');
+	width:100%;
+	height:50px;
+	background-repeat:no-repeat;
+	margin-left:10px;
+}
+.fbb:hover {
+	background:url('../img/fbb1.png');
+	background-repeat:no-repeat;
+}
+.tw {
+	width:100%;
+	height:50px;
+	margin-top:20px;
+}
+.tww:hover {
+	background:url('../img/tww1.png');
+	background-repeat:no-repeat;
+}
+.tww {
+	background:url('../img/tww.png');
+	width:100%;
+	height:50px;
+	background-repeat:no-repeat;
+	margin-left:10px;
+}
+.in {
+	width:100%;
+	height:50px;
+	margin-top:20px;
+}
+.inn {
+	background:url('../img/inn.png');
+	width:100%;
+	height:50px;
+	background-repeat:no-repeat;
+	margin-left:10px;
+}
+.inn:hover {
+	background:url('../img/inn1.png');
+	background-repeat:no-repeat;
+}
+.tombol a button  {
+	color:#fff;
+}
+.tombol button {
+	background:	#1abc9c;
+	border:none;
+	width:100%;
+	height:50px;
+	font-size:14px;
+	margin:0px;
+	border-radius:5px;
+	margin-bottom:30px;
+	margin-top:20px;
+}
+.tombol button:hover {
+	cursor: pointer;
+	font-weight: 800;
+	opacity:0.5;
+}
+
+/* ini ngatur footer */
+
+footer {
+	float:left;
+	width:100%;
+	height:60px;
+	background:#111;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* jika lebar max nya 960px */
+@media screen and (max-width: 960px) {
+	body {
+		overflow:scroll; /* memunculkan scroll yang tadi di hidden */
+	}
+	.wrap {
+		width: 100%;
+		margin:0 auto;
+	}
+	.atas {
+		width:100%;
+		height:auto;
+		background:none;
+	}
+	.kiri {
+		display:none;
+	}
+	.kanan {
+		width:100%;
+	}
+	nav {
+		margin:0px;
+	}
+	nav.menu ul {
+		width: 100%;
+	}
+ 
+	nav.menu ul {
+		float:none; /* membuat yang tadinya list horizontal menjadi vertikal */
+	}
+ 
+	nav.menu ul li {
+		float:none;
+	}
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+		color:#fff;
+	}
+	.blog {
+		width:100%;
+	}
+	.blog h1{
+		font-size:18pt;
+	} 
+	.info {
+		width:100%;
+		height:auto;
+		background:#444;
+		text-align:justify;
+		margin:0;
+	}
+	.blog .info p {
+		margin:5% 5% 0 5%;
+	}
+	.blog .info h1 {
+		margin:5%;
+	}
+	.kiri {
+		display:none; /* bagian kiri tidak ditampilkan yaitu bagian soscial media icon*/
+	}
+	.kanan {
+		width:100%;
+	}
+	.tombol button{
+		border-radius:0px;
+		width:90%;
+		margin-left:5%;
+		margin-bottom:10px;
+	}
+	.blog {
+		background:#222;
+		height:auto;
+	}
+	nav.menu ul a:hover {
+		color:#12ab9c;
+	}
+}
+
+/* jika lebar maksimal 460px */
+@media screen and (max-width: 460px) {
+	body {
+		overflow:scroll;
+	}
+	.blog {
+		background:#222;
+		height:auto;
+	}
+	.atas {
+		height:auto;
+	}
+	.kiri {
+		display:none;
+	}
+	.kanan {
+		width:100%;
+	}
+	nav {
+		margin:0px;
+	} 
+	nav.menu ul {
+		width: 100%;
+	}
+ 
+	nav.menu ul {
+		float:none;
+	}
+ 
+	nav.menu ul li {
+		float:none;
+	}
+ 
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+		color:#fff;
+	}	
+	nav.menu ul a:hover {
+		color:#12ab9c;
+	}
+	img {
+		display:none;
+	}
+	.blog h1 {
+		font-size:16pt;
+	}
+
+	.info {
+		width:100%;
+		height:auto;
+		background:#444;
+		text-align:justify;
+		margin:0;
+	}
+	.blog .info p {
+		margin:5%;
+		font-size:12pt;
+	}
+	.blog .info h1 {
+		margin:5%;
+	}
+	.tombol button{
+		border-radius:0px;
+		width:90%;
+		margin-left:5%;
+		margin-bottom:10px;
+		margin-top:10px;
+	}
+}

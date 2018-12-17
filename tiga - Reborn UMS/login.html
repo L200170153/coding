@@ -1,0 +1,70 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+	</head>
+	<body>
+		
+		<div class='wrap'>
+		<div class='kiri'>
+			<div class='atas'>
+				AYO DAKWAH!
+			</div>
+			<div class='at'>
+				Asslamualaikum <span id='salam'></span> ! 
+				<br><br>
+				"Sampaikanlah dariku walau hanya satu ayat"<br>(HR. Bukhari)
+				<script>
+					var nama1 = prompt('Assalamualaikum, Mohon Masukkan Nama Anda: ');
+					document.getElementById('salam').innerHTML =nama1;
+				</script>
+			</div>
+			<div class='tabel'>
+				<table>
+					<tr align='center' width='300px'>
+						<td><b>Tanggal</b></td>
+						<td><b>Kota</b></td>
+						<td><b>Tempat Pelaksanaan</b></td>
+					</tr>
+					<tr>
+						<td>26/12/2017</td>
+						<td>Surakarta</td>
+						<td>Gor UMS</td>
+					</tr>
+					<tr>
+						<td>27/12/2017</td>
+						<td>Bandung</td>
+						<td>Masjid Arrahman</td>
+					</tr>
+					<tr>
+						<td>28/12/2017</td>
+						<td>Jakarta</td>
+						<td>Monas</td>
+					</tr>
+				</table>
+			</div>
+			<div class='home'>
+				<a href='tiga.html'><button>Home</button></a>
+			</div>
+		</div>
+		<div class='kanan'>
+			<div class='atas2'>
+				Yuk Join!
+			</div>
+			<div class='formulir'>
+				<form name='aaa' action='404.html' method='get'>
+					<p>Name</p>
+					<input type='text' name='firstname' placeholder='Your name..' required>
+					<p>E-Mail</p>
+					<input type='text' name='mail' placeholder='Your E-Mail..' required>
+					<input type='checkbox'> Saya setuju dengan ketentuan yang berlaku<br>
+					<input type='submit' value='Bismillah'>
+					<input type='reset' value='Reset'>
+				</form>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
